@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  background: url("https://img.goodfon.ru/original/1920x1080/1/92/gorillaz-2d-miordoka-nikkalsa-murdoc-niccals-nudl-noodle-ras.jpg")
+    center no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1440px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto 500px;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.text {
+  display: flex;
+  gap: 20px;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+}
+.quiz-container {
+  max-width: 500px;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.question-number h3 {
+  color: darkcyan;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#question {
+  font-size: 24px;
+  color: #000000;
+  padding: 15px 0;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-bottom: 15px;
+}
+
+.options div {
+  background-color: #cccccc;
+  border: 1px solid #555555;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.options div:hover {
+  background-color: #ccccccaf;
+}
+
+.options div.correct {
+  color: #ffffff;
+  background-color: green;
+}
+
+.options div.wrong {
+  color: #ffffff;
+  background-color: red;
+}
+
+.options div.disabled {
+  pointer-events: none;
+}
+
+.button #btn-next {
+  padding: 10px 50px;
+  background-color: darkcyan;
+  font-size: 18px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.button #btn-next:hover {
+  background-color: #009687b6;
+}
+
+#answers-tracker {
+  border-top: 1px solid #555555;
+  padding-top: 15px;
+}
+
+#answers-tracker div {
+  height: 40px;
+  width: 40px;
+  background-color: #555555;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#answers-tracker div.correct {
+  background-color: green;
+}
+
+#answers-tracker div.wrong {
+  background-color: red;
+}
+
+.quiz-over-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-over-modal.active {
+  display: flex;
+}
+
+.quiz-over-modal .content {
+  background-color: darkcyan;
+  padding: 30px;
+  border-radius: 10px;
+  flex-basis: 700px;
+  max-width: 700px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.quiz-over-modal .content h1 {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.quiz-over-modal .content button {
+  padding: 15px 50px;
+  border: none;
+  background-color: #ff9800;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.quiz-over-modal .content button:hover {
+  background-color: #ff9900b4;
+}
