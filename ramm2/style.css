@@ -5,10 +5,16 @@ body {
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  padding: 10px;
 }
 
 * {
   box-sizing: border-box;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
 .wrapper {
   max-width: 1440px;
@@ -153,7 +159,7 @@ body {
   text-align: center;
 }
 
-.quiz-over-modal .content h1 {
+.quiz-over-modal .content h2 {
   font-size: 36px;
   margin: 0 0 20px;
 }
@@ -184,4 +190,11 @@ body {
 .win span:nth-child(2),
 .win span:nth-child(3) {
   font-weight: 700;
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }  
 }

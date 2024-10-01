@@ -171,3 +171,10 @@ body {
 .quiz-over-modal .content button:hover {
   background-color: #ff9900b4;
 }
+
+@media (max-width: 1023px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }  
+}
