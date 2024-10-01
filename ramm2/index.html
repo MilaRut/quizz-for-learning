@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квиз по Rammmstein</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <audio src="./audio.mp3"></audio>
+  <div class="quiz-over-modal">
+    <div class="content">
+      <h1>Хороший результат !</h1>
+      <p>Ты ответил на
+        <span id="correct-answer"></span> из
+        <span id="number-of-all-questions-2"></span> вопроса
+      </p>
+      <button id="btn-try-again">Попробуй снова</button>
+      <p class="win">
+        <span></span>
+        <span></span>
+        <span></span>
+      </p>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="text">
+      <p><b>Klavier - Rammstein</b><br>
+        <br>
+        Sie sagen zu mir<br>
+        schliess auf diese Tur<br>
+        die Neugier wird zum Schrei<br>
+        was wohl dahinter sei<br>
+        hinter dieser Tur<br>
+        steht ein Klavier<br>
+        die Tasten sind staubig<br>
+        die Saiten sind verstimmt<br>
+        hinter dieser Tur<br>
+        sitzt sie am Klavier<br>
+        doch sie spielt nicht mehr<br>
+        ach das ist so lang her<br>
+        Dort am Klavier<br>
+        lauschte ich ihr<br>
+        und wenn ihr Spiel begann<br>
+        hielt ich den Atem an<br>
+        Sie sagte zu mir<br>
+        ich bleib immer bei dir<br>
+        doch es hatte nur den Schein<br>
+        sie spielte fur mich allein<br>
+        ich goss ihr Blut<br>
+        ins Feuer meiner Wut<br>
+        ich verschloss die Tur<br>
+        man fragte nach ihr<br>
+        Dort am Klavier<br>
+        lauschte ich ihr<br>
+        und wenn ihr Spiel begann<br>
+        hielt ich den Atem an<br>
+      </p>
+      <p>
+        <b>&nbsp;</b><br>
+        <br>
+        Dort am Klavier<br>
+        lauschte ich ihr<br>
+        und wenn ihr Spiel begann<br>
+        hielt ich den Atem an<br>
+        Dort am Klavier<br>
+        stand ich bei ihr<br>
+        es hatte den Schein<br>
+        sie spielte fur mich allein<br>
+        Geoffnet ist die Tur<br>
+        ei wie sie schreien<br>
+        ich hore die Mutter flehen<br>
+        der Vater schlagt auf mich ein<br>
+        man lost sie vom Klavier<br>
+        und niemand glaubt mir hier<br>
+        das ich todkrank<br>
+        von Kummer und Gestank<br>
+        Dort am Klavier<br>
+        lauschte ich ihr<br>
+        und wenn ihr Spiel begann<br>
+        hielt ich den Atem an<br>
+        Dort am Klavier<br>
+        lauschte sie mir<br>
+        und als mein Spiel begann<br>
+        hielt sie den Atem an
+      </p>
+    </div>
+    <div class="quiz-container">
+      <div class="question-number">
+        <h3>Вопрос
+          <span id="number-of-question"></span>
+          из
+          <span id="number-of-all-questions"></span>
+        </h3>
+      </div>
+      <div id="question"></div>
+      <div class="options">
+        <div data-id="0" class="option option1"></div>
+        <div data-id="1" class="option option2"></div>
+      </div>
+      <div class="button">
+        <button id="btn-next">Дальше</button>
+      </div>
+      <div id="answers-tracker">
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
