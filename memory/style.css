@@ -9,8 +9,8 @@ body {
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  background: url("https://www.rpgnuke.ru/wp-content/uploads/2020/06/hogwarts_a_dark_legacy_111237483534525-1920x1080.jpg") no-repeat;
-  background-size: 100%;
+  background: url("./hog.jpeg") no-repeat;
+  background-size: cover;
   background-position-y: 0%;
 }
 
@@ -19,11 +19,36 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px;
 }
 
 .steps-wrapper {
   margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px black;
+  padding-top: 20px;
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b58700;
+  border: none;
+  border-radius: 15px;
+  width: 200px;
+  height: 100px;
+  color: #000000;
+  font-size: 36px;
+  box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.start:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .game {
@@ -97,6 +122,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -105,4 +131,27 @@ body {
   height: 200px;
   border-radius: 20px;
   background-color: #acb7d1;
+}
+
+.restart {
+  background-color: transparent;
+  border: 2px solid #587080;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.restart svg {
+  width: 16px;
+  height: 16px;
+}
+
+.restart:hover {
+  transform: scale(1.1);
 }

@@ -146,3 +146,12 @@ function endGame() {
   document.querySelector('.modal').classList.add('active');
   audio4.play();
 }
+
+document.querySelector('.start').addEventListener('click', () => {
+  document.querySelector('#start').play();
+  document.querySelector('.start').style.display = 'none';
+});
+
+document.querySelector('.restart').addEventListener('click', () => {
+  window.location.reload();
+});
