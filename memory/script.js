@@ -1,42 +1,42 @@
 const words = [
   {
-    de: "gehen",
-    ru: "идти",
+    de: "hell",
+    ru: "светлый",
     id: 0
   },
   {
-    de: "kommen",
-    ru: "приходить",
+    de: "gemuetlich",
+    ru: "уютный",
     id: 1
   },
   {
-    de: "sehen",
-    ru: "видеть",
+    de: "bequem",
+    ru: "удобный",
     id: 2
   },
   {
-    de: "hören",
-    ru: "слышать",
+    de: "viel Platz zum Rennen und Spielen",
+    ru: "много пространства для игры и бега",
     id: 3
   },
   {
-    de: "essen",
-    ru: "есть",
+    de: "zauberhaft",
+    ru: "волшебный",
     id: 4
   },
   {
-    de: "trinken",
-    ru: "пить",
+    de: "Lehrer sind kinderlieb",
+    ru: "учителя любят детей",
     id: 5
   },
   {
-    de: "lesen",
-    ru: "читать",
+    de: "das Schulgebaeude hat viele Stockwerke",
+    ru: "в здании школы много этажей",
     id: 6
   },
   {
-    de: "schreiben",
-    ru: "писать",
+    de: "Gesang im Chor",
+    ru: "пение в хоре",
     id: 7
   }
 ]
