@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квиз по Rammmstein</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <audio src="./audio/start.mp3"></audio>
+  <div class="overlay">
+    <button type="button" class="start">Start!</button>
+    <audio src="./audio/start.mp3" class="start-audio"></audio>
+  </div>
+  <div class="quiz-over-modal">
+    <div class="content">
+      <h2>Хороший результат!</h2>
+      <p>Ты ответил на
+        <span id="correct-answer"></span> из
+        <span id="number-of-all-questions-2"></span> вопроса
+      </p>
+      <button id="btn-try-again">Попробуй снова</button>
+      <p class="win">
+        <span></span>
+        <span></span>
+        <span></span>
+      </p>
+    </div>
+  </div>
+  <h1>Till fragt: "Hast du Modalverben gut gelernt? Jetzt pruefen wir zusammen</h1>
+  <div class="wrapper">
+    <div class="text">
+      <p><b>Klavier - Rammstein</b><br>
+        <br>
+        Wer zu Lebzeit gut auf Erden<br>
+        wird nach dem Tod ein Engel werden<br>
+        den Blick gen Himmel fragst du dann<br>
+        warum man sie nicht sehen kann<br>
+        Erst wenn die Wolken schlafengehn<br>
+        kann man uns am Himmel sehn<br>
+        wir haben Angst und sind allein<br>
+        Gott weiss ich will kein Engel sein<br>
+        Sie leben hinterm Sonnenschein<br>
+        getrennt von uns unendlich weit<br>
+        sie müssen sich an Sterne krallen (ganz fest)<br>
+        damit sie nicht vom Himmel fallen<br>
+        Erst wenn die Wolken schlafengehn<br>
+        kann man uns am Himmel sehn<br>
+        wir haben Angst und sind allein<br>
+        Gott weiss ich will kein Engel sein<br>
+        Erst wenn die Wolken schlafengehn<br>
+        kann man uns am Himmel sehn<br>
+        wir haben Angst und sind allein<br>
+        Gott weiss ich will kein Engel sein
+      </p>      
+    </div>
+    <div class="quiz-container">
+      <div class="question-number">
+        <h3>Вопрос
+          <span id="number-of-question"></span>
+          из
+          <span id="number-of-all-questions"></span>
+        </h3>
+      </div>
+      <div id="question"></div>
+      <div class="options">
+        <div data-id="0" class="option option1"></div>
+        <div data-id="1" class="option option2"></div>
+      </div>
+      <div class="button">
+        <button id="btn-next">Weiter</button>
+      </div>
+      <div id="answers-tracker">
+      </div>
+    </div>
+  </div>
+  <audio src="./audio/end.mp3" class="end-audio"></audio>
+  <script src="./script.js"></script>
+</body>
+
+</html>

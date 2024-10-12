@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квиз по пчелке Майе</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="quiz-over-modal">
+    <div class="content">
+      <h1>Хороший результат !</h1>
+      <p>Ты ответил на
+        <span id="correct-answer"></span> из
+        <span id="number-of-all-questions-2"></span> вопроса
+      </p>
+      <button id="btn-try-again">Попробуй снова</button>
+    </div>
+  </div>
+  <h1>Die gute Biene Maia lehrt und fragt heute zum Thema "Meine Schule"</h1>
+  <div class="wrapper">
+    <div class="image">
+      <img src="./maya.png" width="500" height="500" alt="">
+    </div>
+    <div class="quiz-container">
+      <div class="question-number">
+        <h3>Вопрос
+          <span id="number-of-question"></span>
+          из
+          <span id="number-of-all-questions"></span>
+        </h3>
+      </div>
+      <div id="question"></div>
+      <div class="options">
+        <div data-id="0" class="option option1"></div>
+        <div data-id="1" class="option option2"></div>
+      </div>
+      <div class="button">
+        <button id="btn-next">Weiter</button>
+      </div>
+      <div id="answers-tracker">
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
