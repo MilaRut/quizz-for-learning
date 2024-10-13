@@ -27,7 +27,7 @@ const questions = [
   {
     question: `Wie sagt dein Lehrer?`,
     options: ["Du sollst deine Matheaufgabe machen.", "Du musst deine Matheaufgabe machen"],
-    rightAnswer: 1
+    rightAnswer: 0
   }
 ];
 
